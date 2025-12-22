@@ -1,27 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-.container {
-    max-width: 600px;
-    margin: 40px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-}
-h1, h2 {
-    color: #333333;
-}
-p, li {
-    color: #555555;
-    line-height: 1.6;
-}
-footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #777777;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Welcome to My Web Journey</h1>
+            <p>Building modern, professional, and animated web experiences</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                To create impactful web applications that inspire users and push the boundaries of design and interactivity.
+            </p>
+        </section>
+
+        <section class="goals">
+            <h2>Big Goals</h2>
+            <ul>
+                <li>Develop cutting-edge, responsive websites</li>
+                <li>Master animations and interactive user experiences</li>
+                <li>Contribute to open-source projects professionally</li>
+                <li>Deploy projects live for global audiences</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>Connect via <a href="mailto:contact@example.com">contact@example.com</a> to collaborate or learn more.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Professional Web Development Portfolio</p>
+    </footer>
+</body>
+</html>
 
