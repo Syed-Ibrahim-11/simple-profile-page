@@ -1,47 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <h1>Welcome to My Web Journey</h1>
-            <p>Building modern, professional, and animated web experiences</p>
-        </div>
-    </header>
+/* Reset & General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main>
-        <section class="mission">
-            <h2>Our Mission</h2>
-            <p>
-                To create impactful web applications that inspire users and push the boundaries of design and interactivity.
-            </p>
-        </section>
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f0f4ff, #dbe6ff);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-        <section class="goals">
-            <h2>Big Goals</h2>
-            <ul>
-                <li>Develop cutting-edge, responsive websites</li>
-                <li>Master animations and interactive user experiences</li>
-                <li>Contribute to open-source projects professionally</li>
-                <li>Deploy projects live for global audiences</li>
-            </ul>
-        </section>
+/* Header */
+header {
+    background: linear-gradient(to right, #4a90e2, #50e3c2);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+}
 
-        <section class="contact">
-            <h2>Get in Touch</h2>
-            <p>Connect via <a href="mailto:contact@example.com">contact@example.com</a> to collaborate or learn more.</p>
-        </section>
-    </main>
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
 
-    <footer>
-        <p>© 2025 Professional Web Development Portfolio</p>
-    </footer>
-</body>
-</html>
+header p {
+    font-size: 1.2rem;
+}
 
+/* Main Sections */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+section:nth-child(2) { animation-delay: 0.3s; }
+section:nth-child(3) { animation-delay: 0.6s; }
+section:nth-child(4) { animation-delay: 0.9s; }
+
+section h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 3px solid #50e3c2;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section p, section li {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+section ul {
+    list-style: disc inside;
+    margin-top: 15px;
+}
+
+/* Links */
+a {
+    color: #50e3c2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4a90e2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 0.95rem;
+    background-color: #f1f3f5;
+    color: #555;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1.2s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section li {
+        font-size: 1rem;
+    }
+}
