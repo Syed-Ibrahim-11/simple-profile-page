@@ -1,91 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Web Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="logo">Portfolio</div>
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+  <!-- LEFT SOCIAL ICONS -->
+  <div class="social left">
+    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+    <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
 
-<!-- Hero -->
-<section id="home" class="hero">
-    <h1>Designing Modern Web Experiences</h1>
-    <p>Focused on clean UI, smooth interactions, and scalable front-end development.</p>
-    <a href="#projects" class="btn">View Projects</a>
-</section>
+  <!-- RIGHT SOCIAL ICONS -->
+  <div class="social right">
+    <a href="#" title="CodePen"><i class="fab fa-codepen"></i></a>
+    <a href="#" title="Dev.to"><i class="fab fa-dev"></i></a>
+    <a href="#" title="Medium"><i class="fab fa-medium"></i></a>
+    <a href="#" title="Website"><i class="fas fa-globe"></i></a>
+  </div>
 
-<!-- About -->
-<section id="about" class="section">
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>Web Development Portfolio</h1>
+    <p>Learning and building clean, simple web interfaces.</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="card">
     <h2>About</h2>
     <p>
-        This portfolio represents a journey into modern web development.
-        The focus is on writing clean, maintainable code while building
-        visually appealing and user-friendly interfaces.
+      This portfolio showcases small projects built while learning the basics
+      of HTML and CSS. The focus is on clean structure, readable code, and
+      simple, modern layouts.
     </p>
-</section>
+  </section>
 
-<!-- Skills -->
-<section id="skills" class="section alt">
+  <!-- SKILLS -->
+  <section class="card light">
     <h2>Skills</h2>
-    <div class="skills-grid">
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>Responsive Design</span>
-        <span>UI / UX Principles</span>
-        <span>Git & GitHub</span>
-        <span>Web Animations</span>
-    </div>
-</section>
+    <ul class="skills">
+      <li>HTML (Basics)</li>
+      <li>CSS (Basics)</li>
+      <li>Page Layout</li>
+      <li>GitHub Basics</li>
+    </ul>
+  </section>
 
-<!-- Projects -->
-<section id="projects" class="section">
+  <!-- PROJECTS -->
+  <section class="card">
     <h2>Projects</h2>
 
-    <div class="project-card">
-        <h3>Modern Landing Page</h3>
-        <p>
-            A responsive landing page built with HTML and CSS,
-            featuring smooth animations and modern layout techniques.
-        </p>
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        A clean static website built using HTML and CSS to practice layout,
+        styling, and structure.
+      </p>
+      <a href="#">View on GitHub</a>
     </div>
 
-    <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>
-            A clean portfolio-style website focused on structure,
-            design consistency, and professional presentation.
-        </p>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section alt">
-    <h2>Contact</h2>
-    <p>
-        Interested in collaboration or opportunities?<br>
-        Reach out via <a href="mfsyedibrahim27@gmail.com">mfsyedibrahim27@gmail.com</a>
-    </p>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>© 2025 · Built with HTML & CSS</p>
-</footer>
+  </section>
 
 </body>
 </html>
+
+
 
