@@ -17,7 +17,7 @@ The goal is to learn by building small and simple projects.
 - CSS3
 
 ## Project Structure
-src/
+docs/
   index.html
   style.css
 
