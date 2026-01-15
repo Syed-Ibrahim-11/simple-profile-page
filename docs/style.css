@@ -79,45 +79,6 @@ body {
   text-decoration: underline;
 }
 
-/* SIDE SOCIAL ICONS */
-.social {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  z-index: 100;
-}
-
-.social a {
-  width: 52px;
-  height: 52px;
-  background: white;
-  color: #0a58ca;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-}
-
-.social a:hover {
-  transform: translateY(-4px);
-  background: #eef4ff;
-  color: #084298;
-}
-
-.social.left {
-  left: 20px;
-}
-
-.social.right {
-  right: 20px;
-}
-
 /* HIDE ON MOBILE */
 @media (max-width: 900px) {
   .social {
